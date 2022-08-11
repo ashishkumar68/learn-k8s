@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-db-mysql
+  labels:
+    env: test
+
+spec:
+  containers:
+    - name: app-db
+      image: mysql:5.7
